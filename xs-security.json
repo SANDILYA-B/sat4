@@ -1,0 +1,22 @@
+{
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.flightAdmin",
+      "description": "Admin role for flight"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "Admin",
+      "description": "Admin role for flight",
+      "scope-references": [
+        "$XSAPPNAME.flightAdmin"
+      ]
+    }
+  ],
+  "oauth2-configuration": {
+    "redirect-uris": ["https://*.cfapps.us10-001.hana.ondemand.com/**"]
+  }
+  
+}
